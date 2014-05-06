@@ -50,10 +50,6 @@ typedef struct
 	uint8_t* prgbBuf;
 	//rgb缓冲区长度
 	int rgbbuflen;
-	//反交错处理标志 0不处理 1处理
-	//uint8_t  dtlFlag;
-	//是否处理YC伸张
-	//uint8_t  fullscale;
 	//图像宽度和高度
 	int nImageWidth;
 	int nImageHeight;
@@ -151,10 +147,6 @@ int h264dec_create()
 		}
 	}
 
-	//反交错处理标志
-	//pCH264Decode->dtlFlag = 1;
-	//是否处理伸张
-	//pCH264Decode->fullscale = 0;
 	//初始化成功标志
 	pCH264Decode->bInitOK = 1;
 
